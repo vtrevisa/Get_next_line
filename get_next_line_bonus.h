@@ -6,7 +6,7 @@
 /*   By: vitor <vitor@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 18:13:46 by vitor             #+#    #+#             */
-/*   Updated: 2022/07/14 17:23:01 by vitor            ###   ########.fr       */
+/*   Updated: 2022/07/14 22:09:47 by vitor            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define GET_NEXT_LINE_BONUS_H
 
 # include <unistd.h>
-# include <fcntl.h>
 # include <stdlib.h>
 # define MAX_FD_SIZE 1024
 

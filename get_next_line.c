@@ -6,7 +6,7 @@
 /*   By: vitor <vitor@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 20:11:19 by vitor             #+#    #+#             */
-/*   Updated: 2022/07/14 17:16:50 by vitor            ###   ########.fr       */
+/*   Updated: 2022/07/16 13:58:24 by vitor            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,12 +94,12 @@ char	*get_next_line(int fd)
 	char		*ret;
 	static char	*buf;
 
-	if (fd <= 0 || fd > MAX_FD_SIZE || BUFFER_SIZE <= 0)
+	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (0);
 	buf = get_buf(fd, buf);
-	ret = get_line(get_buf(fd, buf));
 	if (!buf || !*buf)
 		return (0);
+	ret = get_line(buf);
 	buf = get_rest(buf);
 	return (ret);
 }
