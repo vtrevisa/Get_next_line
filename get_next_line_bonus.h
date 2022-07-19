@@ -6,7 +6,7 @@
 /*   By: vitor <vitor@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 18:13:46 by vitor             #+#    #+#             */
-/*   Updated: 2022/07/19 18:10:55 by vitor            ###   ########.fr       */
+/*   Updated: 2022/07/19 18:20:06 by vitor            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ char	*get_next_line(int fd);
 
 size_t	ft_strlen(const char *s);
 
-char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strjoin(char *s1, char *s2);
 
-char	*ft_strchr(const char *s, int c);
+char	*ft_strchr(char *s, int c);
 
 #endif
