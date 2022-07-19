@@ -6,12 +6,11 @@
 /*   By: vitor <vitor@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 18:03:23 by vitor             #+#    #+#             */
-/*   Updated: 2022/07/08 18:05:23 by vitor            ###   ########.fr       */
+/*   Updated: 2022/07/19 18:05:47 by vitor            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <fcntl.h>
 #include <stdlib.h>
 
 char	*get_next_line(int fd);

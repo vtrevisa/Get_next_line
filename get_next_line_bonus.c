@@ -6,11 +6,11 @@
 /*   By: vitor <vitor@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 18:09:09 by vitor             #+#    #+#             */
-/*   Updated: 2022/07/08 18:12:44 by vitor            ###   ########.fr       */
+/*   Updated: 2022/07/19 18:11:10 by vitor            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 static char	*get_line(char *buf)
 {
