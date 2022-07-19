@@ -6,7 +6,7 @@
 /*   By: vitor <vitor@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 18:09:09 by vitor             #+#    #+#             */
-/*   Updated: 2022/07/19 18:11:10 by vitor            ###   ########.fr       */
+/*   Updated: 2022/07/19 19:58:00 by vitor            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ static char	*get_line(char *buf)
 	int		ln;
 
 	ln = 0;
+	if (!*buf[fd])
+		return (NULL);
 	if (*buf)
 	{
 		while (buf[ln] && buf[ln] != '\n')
@@ -97,7 +99,7 @@ char	*get_next_line(int fd)
 	if (fd < 0 || fd > MAX_FD_SIZE || BUFFER_SIZE <= 0)
 		return (0);
 	buf[fd] = get_buf(fd, buf[fd]);
-	if (!buf[fd] || !*buf[fd])
+	if (!buf[fd])
 		return (0);
 	ret = get_line(buf[fd]);
 	buf[fd] = get_rest(buf[fd]);
