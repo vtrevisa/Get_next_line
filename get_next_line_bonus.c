@@ -6,7 +6,7 @@
 /*   By: vitor <vitor@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 18:09:09 by vitor             #+#    #+#             */
-/*   Updated: 2022/07/19 19:58:00 by vitor            ###   ########.fr       */
+/*   Updated: 2022/07/19 20:05:45 by vitor            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static char	*get_line(char *buf)
 	int		ln;
 
 	ln = 0;
-	if (!*buf[fd])
+	if (!*buf)
 		return (NULL);
 	if (*buf)
 	{
