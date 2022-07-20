@@ -2,7 +2,7 @@ NAME	= gnl.a
 SRC		= get_next_line_utils.c get_next_line.c
 OBJ		= $(SRC:.c=.o)
 
-BNAME	= gnl_b.all
+BNAME	= gnl_b.a
 BSRC	= get_next_line_utils_bonus.c get_next_line_bonus.c
 OBJB	= $(BSRC:.c=.o)
 
