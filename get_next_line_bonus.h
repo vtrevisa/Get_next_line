@@ -6,7 +6,7 @@
 /*   By: vitor <vitor@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 18:13:46 by vitor             #+#    #+#             */
-/*   Updated: 2022/07/19 18:20:06 by vitor            ###   ########.fr       */
+/*   Updated: 2022/07/20 19:47:16 by vitor            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+
 # define MAX_FD_SIZE 1024
 
 char	*get_next_line(int fd);
